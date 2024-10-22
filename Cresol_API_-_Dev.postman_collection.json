@@ -1,0 +1,572 @@
+{
+	"info": {
+		"_postman_id": "4a37f4b0-d565-4d89-ae93-9db5facd2b3c",
+		"name": "Cresol API - Dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET titulos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2NDI2MTQ0NzUsImlhdCI6MTY0MjYxNDE3NSwianRpIjoiOGUzZTUxZjYtZDI3NS00OWYyLWFjZWQtNjg0MGYwMmVkYzNiIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWRldi5nb3Zlcm5hcnRpLmNvbS5ici9hdXRoL3JlYWxtcy9jcmVzb2wiLCJzdWIiOiJmOmJhMWIyMmMzLTJjZWMtNGU5NS1iYjZjLTlmZDk4OThhZTc5Njpmc2xpbWEiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiYmRhMTE2OTItMDUxYS00NDFiLTg1YmQtNGFlM2JhMzA2MjI3IiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IlNVUFJFTUEgQ09NRVJDSU8gREUgUEVDQVMgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImZzbGltYSIsImdpdmVuX25hbWUiOiJTVVBSRU1BIENPTUVSQ0lPIERFIFBFQ0FTIExUREEiLCJhY2NvdW50IjoiMjQ5NDkifQ.jEwcOKYgvFHlAhPgwwsTwAhP5-kMrACC1aOab6A1X4V1Bu9mL5P7a8Om9H_U_pX2WG4vtiL7vqwyGVV6WYk4iCEQJ09WGpQYjhtNrJIJX7yVf9k7Hxl6Zyyd0QOBXNxhKNHSYL-gQNH_ejVJPpAyOjj7oSlPZb-UrWylWokXZ08PJbSe_Ne9vmlfqlZBeWsUclYMq1iOd4eZZaJTFTWeSWrEpRC8OLj0M_dPgHm6Ba27a8f9njg3ETUwGHHQUD9HLCpO5gG1vbEN75AHyA9kEFzYCiPUFSzLUDXNSVqXBtQvxsc6CEWEcaVDYjxFrLnYaUXoMdz5e0KFxO-kJqmftA",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/titulos?status=EM_ABERTO",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"titulos"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "EM_ABERTO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET titulos By id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2NDIxOTM2NjcsImlhdCI6MTY0MjE5MzM2NywianRpIjoiYjVmMTBiMDctOGRhYy00MDQ0LWFhOGMtM2RjZjIwNGFkMGE5IiwiaXNzIjoiaHR0cHM6Ly9jcmVzb2xhdXRoLmdvdmVybmFydGkuY29tLmJyL2F1dGgvcmVhbG1zL2NyZXNvbCIsInN1YiI6ImY6ZTk5NmViYjEtYWQ4Mi00NjZmLThiMWUtOTNiZTQ4M2UxNjgxOnNpbHZpYWRvdXJhZG8iLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiODkyMjQ3MmQtMzRkYS00YzY0LTkwZWUtYzliZDg1NDIxOTJlIiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IkVNQlJBQ09OIEFETUlOSVNUUkFET1JBIERFIENPTlNPUkNJTyBMVERBIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2lsdmlhZG91cmFkbyIsImdpdmVuX25hbWUiOiJFTUJSQUNPTiBBRE1JTklTVFJBRE9SQSBERSBDT05TT1JDSU8gTFREQSIsImFjY291bnQiOiIzNTQ4MSJ9.js5DQkXw_vKsHVzpgJA6GPdVRBf2YnwUIVpq2QeiW4bLBLGGypyfGFQE-lNp1la5jyOvTR-A_QGTxsNmAteHNh-AX7rZVQ1obeHq9M9lvvVW7KMkOUP0IE76_Pr5LtuM-Vg5TYtG-1NdQXUhk4soC8ofvl4KWkMe68PfVefy9TYFYfGqtojVGr0mU9UkRDWDVVCZrUc94Su0PnHzXGFflPR7h-NuAZpW96CWlt3I6lvftSPD3N_9I-jLCj7kpN8QNLj3VA1ZITJPCQgLKU4-w8TPTtfP5NyiPqiOZ3k-ob0A4JSVVOeKEw5PRx23hGoxq-XKzMYDUtkgXTa7BObPmw",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/titulos/608039",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"titulos",
+						"608039"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Pagadores By id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2MzgyNzA3NTYsImlhdCI6MTYzODI3MDQ1NiwianRpIjoiNmVkYTJkMzEtZmZhMS00M2U1LWJjMDQtNjEzZDY2MTc3ODkzIiwiaXNzIjoiaHR0cDovL2F1dGgtZGV2LmdvdmVybmFydGkuY29tLmJyL2F1dGgvcmVhbG1zL2NyZXNvbCIsInN1YiI6ImY6M2U5MDY5MzYtMTNkMS00MjQ1LTlmYWItYjY4MTM0YThmNzVhOmdvdmVybmFydGkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiYWZlYzFiOWQtNWZjMC00ZThjLWFlYmYtNzA3Mzg5OTAzZDY0IiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IkdPVkVSTkFSIFNPTFVDQU8gRU0gR0VTVEFPIEUgSU5GT1JNQVRJQ0EgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImdvdmVybmFydGkiLCJnaXZlbl9uYW1lIjoiR09WRVJOQVIgU09MVUNBTyBFTSBHRVNUQU8gRSBJTkZPUk1BVElDQSBMVERBIiwiYWNjb3VudCI6IjIxMzM4In0.IjvfMQTtarhlvVRrfSoYAGEVnblUHZxEdUCjPAM9p7B54-wKAFRnZwqDJ__1gZVMG73mTd9CCrS7lkUl8EIY8fZ1EBop690DoBx2skqQpSCtHnYbEmJzQNYcprMwlE9O7e4OxWfMho5ENHr21TcDRfNFzgII5XWrRcC49rYDDaaiU1IKSeOuR8i6VhWKghBzYo6AwvmSAkWEBEQ-m536VtbT-psl5n2VqS9495aPvZvB-rvFAquOdj6lVEAVYjcYtVEBuqSC0gtYiX2NjCsAQyxVeWWeMBwWwditJ4144BqsV3l0Plc5C65sKT8fDyss2eUr34cUhk6TNQn_dOQtrg",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/pagadores/728011",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"pagadores",
+						"728011"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Pagadores",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2MjQzMTM4MjIsImlhdCI6MTYyNDMxMzUyMiwianRpIjoiYmZhZWNlYTItZDE5NC00NjQwLTlmNGUtNzhkZTY0OGRmYTNiIiwiaXNzIjoiaHR0cDovL2F1dGgtZGV2LmdvdmVybmFydGkuY29tLmJyL2F1dGgvcmVhbG1zL2NyZXNvbCIsInN1YiI6ImY6YmI2NTAyODAtOTFiYi00ZmQ3LWIxODEtYjRjNTkxMzAxMDg1OmdvdmVybmFydGkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiZmI2YWUzOTgtMjczZC00MDA2LTk1NjUtOGE4ZTExMmQ4ZGQwIiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IkdPVkVSTkFSIFNPTFVDQU8gRU0gR0VTVEFPIEUgSU5GT1JNQVRJQ0EgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImdvdmVybmFydGkiLCJnaXZlbl9uYW1lIjoiR09WRVJOQVIgU09MVUNBTyBFTSBHRVNUQU8gRSBJTkZPUk1BVElDQSBMVERBIiwiYWNjb3VudCI6IjIxMzM4In0.b5wiytwehPpuEcEQKDsyxN3Mcfl27u0Ic6WZtUoVmLeIiHEE_wS6jj6DAn-wHQkUQWyrUUbk-dUr8_c77SMqM9ZW7ypbArLRooTjjUC4wC52CMlrFt-ObZ7ZnGmyJ_Ybwue9L9NinbCu_K616DJ7iPq7yxlBnlWzHnkPxKtAtHsgbZa9ZOLXEgEPjq5ptrRJ3vMXkxyMRUNIaiwyqwSH9iUKqaRsd_ccRtcinAGWRZQEFdrM0ojQobuhBoR--gpWWHVE9DAqB7zwsljFcSFJS71T1rk6J9Mqh-ZxUUoY2J92mcVHnFh27kJZIgCcUVWPdThD_vw8AyYOvOtNz-qXqQ",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/pagadores/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"pagadores",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Access Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();    ",
+							"    pm.environment.set(\"authToken\", jsonData[\"access_token\"]);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "isuper",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "senha",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "cresolApi",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "read",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "cr3s0l4p1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://auth-dev.governarti.com.br/auth/realms/cresol/protocol/openid-connect/token",
+					"protocol": "https",
+					"host": [
+						"auth-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"auth",
+						"realms",
+						"cresol",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST titulos",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2NDMxNDM5ODYsImlhdCI6MTY0MzE0MzY4NiwianRpIjoiZWQ3NWQzNTUtYTY4MS00ZjMyLTlkNjYtZDMwNTc5YzkzOTA2IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWRldi5nb3Zlcm5hcnRpLmNvbS5ici9hdXRoL3JlYWxtcy9jcmVzb2wiLCJzdWIiOiJmOmJhMWIyMmMzLTJjZWMtNGU5NS1iYjZjLTlmZDk4OThhZTc5NjpCT1JHRVNNRSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNyZXNvbEFwaSIsInNlc3Npb25fc3RhdGUiOiIzNWE3NjMxYS0yMmNhLTQ0OTEtYmQxMC1hYTRjNGZiYWViNTgiLCJhY3IiOiIxIiwic2NvcGUiOiJwcm9maWxlIHJlYWQiLCJuYW1lIjoiQUdSTyBPUkRFTkhBUyAtIEVNUFJFRU5ESU1FTlRPUyBMVERBLiIsInByZWZlcnJlZF91c2VybmFtZSI6IkJPUkdFU01FIiwiZ2l2ZW5fbmFtZSI6IkFHUk8gT1JERU5IQVMgLSBFTVBSRUVORElNRU5UT1MgTFREQS4iLCJhY2NvdW50IjoiMTc0In0.L_bdnDW6fp8P8_SBfBZT1NSlZWvW81xxt_jjeC2gFTzrCunaDJKvywyfrP8XKp0JVcwsbDV3xoF8Uv_u66vGC8MkhpZypcYKYptYndLS1k68u4cJzr_e632JrKs_M7qSLwWBz7O7p41imB3XVGyTRusxnE7Z784J2stTpAopHQg6zY0VJQX9HW4YrephFs6cT3HQvAnm7hGoJ3ijS7UmLvODsW8jmOTStHjWTk124JjjpYjLirwSHC1TnXgX9Jap8SRDXxZILuGuG4OoAjPEP8-aUo8lMQ4af2I-kpFUYA4QM9Ekoebe_XDsYNfdp99RLAlMvBVdIzzuAf14lTYHgQ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n\t\"pagadorUf\": \"SE\",\r\n\t\"dtDocumento\": \"2022-04-01\",\r\n\t\"numeroDocumento\": \"00045061-1\",\r\n\t\"dtVencimento\": \"2022-04-01\",\r\n\t\"pagadorCidade\": \"ARACAJU\",\r\n\t\"idEspecie\": 2,\r\n\t\"pagadorEndereco\": \"Rua Francisco Antônio Santos\",\r\n\t\"pagadorCep\": \"49001231\",\r\n\t\"tipoPagador\": 0,\r\n\t\"docPagador\": 1023419580,\r\n\t\"pagadorNome\": \"Rafael Martins\",\r\n\t\"valorNominal\": 635.64,\r\n\t\"pagadorBairro\": \"Aruana\",\r\n    \"cdTipoJuros\": 2\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/titulos/",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"titulos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Pagadores",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2MjQzMDIxMTAsImlhdCI6MTYyNDMwMTgxMCwianRpIjoiOTFhZjc0NDQtMWMzNy00MmIxLWI1MzMtNTA3OTg1NTcyZmM3IiwiaXNzIjoiaHR0cDovL2F1dGgtZGV2LmdvdmVybmFydGkuY29tLmJyL2F1dGgvcmVhbG1zL2NyZXNvbCIsInN1YiI6ImY6YmI2NTAyODAtOTFiYi00ZmQ3LWIxODEtYjRjNTkxMzAxMDg1OmdvdmVybmFydGkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiMzIwMDMxYzUtODVkOS00Y2FhLWIxMTUtNzdkMzAwNzhlY2JiIiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IkdPVkVSTkFSIFNPTFVDQU8gRU0gR0VTVEFPIEUgSU5GT1JNQVRJQ0EgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImdvdmVybmFydGkiLCJnaXZlbl9uYW1lIjoiR09WRVJOQVIgU09MVUNBTyBFTSBHRVNUQU8gRSBJTkZPUk1BVElDQSBMVERBIiwiYWNjb3VudCI6IjIxMzM4In0.PxyyxRRzR509KlYY7SiI-vv6ktfc96OVT8fB_E9hGugeX9a2yRLXQJYFq5x_oPYka785Ns15E5y7at6BTg3lQqvY9hXpCE3-OeW5E-3v4ZlPJvqGvZqM2Zgs_Fz0lI64zgIf3nj9lMKf49WvVg2IPssW_NT7WM-cA2r6lZxV_ullxaWfnKxrUJS1fmVf8Dt4v9bpVCHDmcsq39YFxJTVhOhp-vi6dHTfunGerFz8CrKbHKmXImHii0kSHqDZXxwnJyDDBB8xWSQ6PX_gdvtz1WkC7yfQ4MAuwIn17cYLh-lpJmGbrePrEWOxD7rmIt1vLAgwqLv9685Ie8nQjK_jpA",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"tipoPagador\": \"0\",                \r\n        \"docPagador\": 79274203055,\r\n        \"pagadorNome\": \"Mario Jorge Lobo Zagallo\",\r\n        \"pagadorEndereco\": \"Av Paulista\",        \r\n        \"pagadorUf\": \"SP\",\r\n        \"pagadorCidade\": \"São Paulo\",\r\n        \"pagadorBairro\": \"Bela Vista\",\r\n         \"pagadorCep\": \"01310917\"         \r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/pagadores",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"pagadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT titulos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2MjQyOTkwMTgsImlhdCI6MTYyNDI5ODcxOCwianRpIjoiZDkzODNhMjQtZGY0OC00YjVkLWI1YjktMDQ2YWIxNWMwNzAwIiwiaXNzIjoiaHR0cDovL2F1dGgtZGV2LmdvdmVybmFydGkuY29tLmJyL2F1dGgvcmVhbG1zL2NyZXNvbCIsInN1YiI6ImY6YmI2NTAyODAtOTFiYi00ZmQ3LWIxODEtYjRjNTkxMzAxMDg1OmdvdmVybmFydGkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiNWQxNmEzNjMtYzhlYS00YmVjLWFmYzAtYTg2NjA4NTMzY2E0IiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IkdPVkVSTkFSIFNPTFVDQU8gRU0gR0VTVEFPIEUgSU5GT1JNQVRJQ0EgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImdvdmVybmFydGkiLCJnaXZlbl9uYW1lIjoiR09WRVJOQVIgU09MVUNBTyBFTSBHRVNUQU8gRSBJTkZPUk1BVElDQSBMVERBIiwiYWNjb3VudCI6IjIxMzM4In0.UfyM7s6LFTDYF1-jMAP2xBqgcugz8mKmV1Dl8_2bGLjSv2HuJH-blDN2_n7m-_u4AP90eRj7Xh99_HbuyKkmIhj5SsEvPoB_73VOMoSo6AhNpX81y4HsbRs1G8M9bJ8cQH1qw-M7rC_0CECa1bzjHqAvGl22tVNca5zNxMib_n6b_9RYE1wC_cYlp8tVgx_11ALSP3u9gMbpv5woZiGJWGp0yvtUPX-xXUKrIN1gX77fSuI-BG86mS_4KbzZ2iZLUhlprimA60jUGDVfLiKOJbgz-simnoiyBOo8WMEmDDxEuFg0TGjzULNH9NcQAVUAXme0gZTWakJZ8tRt03ekGg",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"dtVencimento\": \"20210630\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/titulos/44",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"titulos",
+						"44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT titulos Baixar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2MjQzMDU4MTksImlhdCI6MTYyNDMwNTUxOSwianRpIjoiYWZjZTgyOTYtOWVkZS00ODEwLWFiNzMtY2Y4Y2Y0OTI2M2JmIiwiaXNzIjoiaHR0cDovL2F1dGgtZGV2LmdvdmVybmFydGkuY29tLmJyL2F1dGgvcmVhbG1zL2NyZXNvbCIsInN1YiI6ImY6YmI2NTAyODAtOTFiYi00ZmQ3LWIxODEtYjRjNTkxMzAxMDg1OmdvdmVybmFydGkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiM2YyZTc3NGEtYjJjZC00NmMxLTlhMTktOTlmZDFlMTFjNjY5IiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IkdPVkVSTkFSIFNPTFVDQU8gRU0gR0VTVEFPIEUgSU5GT1JNQVRJQ0EgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImdvdmVybmFydGkiLCJnaXZlbl9uYW1lIjoiR09WRVJOQVIgU09MVUNBTyBFTSBHRVNUQU8gRSBJTkZPUk1BVElDQSBMVERBIiwiYWNjb3VudCI6IjIxMzM4In0.nvVIOGKgRtBCcIba_oV_tNQBJgJMbUrEYAGhzuD6Gzgao8_HzoNRRzYbICzMTTGoUnoSXdr_kQYyJpbwhfMjQFUZS5HrfH2RLNryCp_NNQtWHsB74ErNGf6aSEO6YCFXifBlwMB2MgKCR_v-X-8xBWrQTM_WuhrY02e3BuRdtLer-CjXoGu1WWc_nNjTbLogGxdauTVtzLFBo_ddZ3OUDrN7zB924TqCth0GgBHkoFNIgOVuWFmqh5ykpKwo2TdrT3rgrv3pGHNMzuSqdzXqKiGpsw-TlC-oJZCiCtHV5Gdoumgk2u2LOkX1QJ6Q9UjhrY49QOAC0kbypSQyyd9_EA",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"dtVencimento\": \"20210630\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/titulos/10/operacao/baixar",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"titulos",
+						"10",
+						"operacao",
+						"baixar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Pagadores",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2MjQzMDI5NTIsImlhdCI6MTYyNDMwMjY1MiwianRpIjoiNDc3MDg5ZDctOGVjZS00ZDdjLTk3MTYtNmY2Y2NkZGMzNDM4IiwiaXNzIjoiaHR0cDovL2F1dGgtZGV2LmdvdmVybmFydGkuY29tLmJyL2F1dGgvcmVhbG1zL2NyZXNvbCIsInN1YiI6ImY6YmI2NTAyODAtOTFiYi00ZmQ3LWIxODEtYjRjNTkxMzAxMDg1OmdvdmVybmFydGkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiYWFmYjUyMDktNDNjMi00NjBlLTlkMzYtOTdlMmM5NWU5ZDRiIiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IkdPVkVSTkFSIFNPTFVDQU8gRU0gR0VTVEFPIEUgSU5GT1JNQVRJQ0EgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImdvdmVybmFydGkiLCJnaXZlbl9uYW1lIjoiR09WRVJOQVIgU09MVUNBTyBFTSBHRVNUQU8gRSBJTkZPUk1BVElDQSBMVERBIiwiYWNjb3VudCI6IjIxMzM4In0.hGfKaq_VYuUrXtxnE8BtYL10A3fTePTcbs0Ebyr3uoIU19QQcFI7j-1tUx4rGUW6GBnhfCy-x5iW11-zEBy8qudN8iZVhR1ysUvYt5oDTQcaj80iFdRkh51Dd72OYRgoXcPiq6DlgeUYr81zUNkM9r4Qa1b215yDelIOnr1NnHmffuPEr1iPnMh2qP3WmNpt5C3lJNaYXnu9mQr00LG4G-svi5rLcRBlJ5djn_bMbPnNrbVXf78n5tDRbCtzSO32CJ-dXk3wf45LUv4s5t43hZAf9RADR5vQfo_Dt8fhOPPDE4Lk32Tvec9SN6XWsQ9pdSS5kKzpQmaaGmNr4AgvVw",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"tipoPagador\": \"0\",                \r\n        \"docPagador\": 79274203055,\r\n        \"pagadorNome\": \"Mario Lobo Zagallo\",\r\n        \"pagadorEndereco\": \"Av Paulista\",        \r\n        \"pagadorUf\": \"SP\",\r\n        \"pagadorCidade\": \"São Paulo\",\r\n        \"pagadorBairro\": \"Bela Vista\",\r\n         \"pagadorCep\": \"01310917\"         \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/pagadores/803439",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"pagadores",
+						"803439"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Pagadores",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2MjQzMDM2NDUsImlhdCI6MTYyNDMwMzM0NSwianRpIjoiNjBjNzUzYTAtMDkyNS00ZjNjLWFmOGYtZDdlZjk0YmJiNTEzIiwiaXNzIjoiaHR0cDovL2F1dGgtZGV2LmdvdmVybmFydGkuY29tLmJyL2F1dGgvcmVhbG1zL2NyZXNvbCIsInN1YiI6ImY6YmI2NTAyODAtOTFiYi00ZmQ3LWIxODEtYjRjNTkxMzAxMDg1OmdvdmVybmFydGkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiOWFmZTdhMzMtOWZjNC00ZmEzLWFhYmUtNTIwOTUwMWQ1NWYxIiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IkdPVkVSTkFSIFNPTFVDQU8gRU0gR0VTVEFPIEUgSU5GT1JNQVRJQ0EgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImdvdmVybmFydGkiLCJnaXZlbl9uYW1lIjoiR09WRVJOQVIgU09MVUNBTyBFTSBHRVNUQU8gRSBJTkZPUk1BVElDQSBMVERBIiwiYWNjb3VudCI6IjIxMzM4In0.RioOWOCgyL4lq4zDySlUQl1uDjG8qbDAhyReOSmAK1F6_diDPt7JimlY9IvfbtJzDbYbiUxxgc2H-_SYPuZtBUUnBsg0ZHPsnwrpn01fE_edFx-aHj173kd47pd1SBIvO61eVHdMUcfH_szg7ceKJtBgk9MA4h3_5dGNwoIs5ppzBfkskzv_QEh09o9Bm7Bz_r4ct4TL4a1yKpMDD1f0Hw-UlBvZdunXf-qBzqTNw8PiEvs7d78MHMtIPMFEeR-6d0MMXaLLFT-4jKDxCv4whx3MYZ5DAhunYHnz_nbf2L1VOZgWFUyOz5zWYRW1f6-IkR64eC0PAtBB_wbOghIUQg",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-dev.governarti.com.br/pagadores/761772",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"governarti",
+						"com",
+						"br"
+					],
+					"path": [
+						"pagadores",
+						"761772"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Sequenciais",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2NDI2MTQ0NzUsImlhdCI6MTY0MjYxNDE3NSwianRpIjoiOGUzZTUxZjYtZDI3NS00OWYyLWFjZWQtNjg0MGYwMmVkYzNiIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWRldi5nb3Zlcm5hcnRpLmNvbS5ici9hdXRoL3JlYWxtcy9jcmVzb2wiLCJzdWIiOiJmOmJhMWIyMmMzLTJjZWMtNGU5NS1iYjZjLTlmZDk4OThhZTc5Njpmc2xpbWEiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiYmRhMTE2OTItMDUxYS00NDFiLTg1YmQtNGFlM2JhMzA2MjI3IiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IlNVUFJFTUEgQ09NRVJDSU8gREUgUEVDQVMgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImZzbGltYSIsImdpdmVuX25hbWUiOiJTVVBSRU1BIENPTUVSQ0lPIERFIFBFQ0FTIExUREEiLCJhY2NvdW50IjoiMjQ5NDkifQ.jEwcOKYgvFHlAhPgwwsTwAhP5-kMrACC1aOab6A1X4V1Bu9mL5P7a8Om9H_U_pX2WG4vtiL7vqwyGVV6WYk4iCEQJ09WGpQYjhtNrJIJX7yVf9k7Hxl6Zyyd0QOBXNxhKNHSYL-gQNH_ejVJPpAyOjj7oSlPZb-UrWylWokXZ08PJbSe_Ne9vmlfqlZBeWsUclYMq1iOd4eZZaJTFTWeSWrEpRC8OLj0M_dPgHm6Ba27a8f9njg3ETUwGHHQUD9HLCpO5gG1vbEN75AHyA9kEFzYCiPUFSzLUDXNSVqXBtQvxsc6CEWEcaVDYjxFrLnYaUXoMdz5e0KFxO-kJqmftA",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/ocorrencias/sequenciais",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"ocorrencias",
+						"sequenciais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Ocorrências",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlUktVWG10TFhKMHBBNkxBS29aWko1ZlU0VDhCdmxKdERCb3pXanFFdnhjIn0.eyJleHAiOjE2NDI2MTQ0NzUsImlhdCI6MTY0MjYxNDE3NSwianRpIjoiOGUzZTUxZjYtZDI3NS00OWYyLWFjZWQtNjg0MGYwMmVkYzNiIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWRldi5nb3Zlcm5hcnRpLmNvbS5ici9hdXRoL3JlYWxtcy9jcmVzb2wiLCJzdWIiOiJmOmJhMWIyMmMzLTJjZWMtNGU5NS1iYjZjLTlmZDk4OThhZTc5Njpmc2xpbWEiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjcmVzb2xBcGkiLCJzZXNzaW9uX3N0YXRlIjoiYmRhMTE2OTItMDUxYS00NDFiLTg1YmQtNGFlM2JhMzA2MjI3IiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSByZWFkIiwibmFtZSI6IlNVUFJFTUEgQ09NRVJDSU8gREUgUEVDQVMgTFREQSIsInByZWZlcnJlZF91c2VybmFtZSI6ImZzbGltYSIsImdpdmVuX25hbWUiOiJTVVBSRU1BIENPTUVSQ0lPIERFIFBFQ0FTIExUREEiLCJhY2NvdW50IjoiMjQ5NDkifQ.jEwcOKYgvFHlAhPgwwsTwAhP5-kMrACC1aOab6A1X4V1Bu9mL5P7a8Om9H_U_pX2WG4vtiL7vqwyGVV6WYk4iCEQJ09WGpQYjhtNrJIJX7yVf9k7Hxl6Zyyd0QOBXNxhKNHSYL-gQNH_ejVJPpAyOjj7oSlPZb-UrWylWokXZ08PJbSe_Ne9vmlfqlZBeWsUclYMq1iOd4eZZaJTFTWeSWrEpRC8OLj0M_dPgHm6Ba27a8f9njg3ETUwGHHQUD9HLCpO5gG1vbEN75AHyA9kEFzYCiPUFSzLUDXNSVqXBtQvxsc6CEWEcaVDYjxFrLnYaUXoMdz5e0KFxO-kJqmftA",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/ocorrencias/209",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"ocorrencias",
+						"209"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
